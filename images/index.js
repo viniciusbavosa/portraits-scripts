@@ -3,7 +3,7 @@ import { simpleGit } from 'simple-git';
 import 'dotenv/config';
 
 const options = {
-  baseDir: process.cwd({ path: process.env.PATH }),
+  baseDir: process.env.PATH,
   binary: 'git',
   maxConcurrentProcesses: 6,
   trimmed: false,
